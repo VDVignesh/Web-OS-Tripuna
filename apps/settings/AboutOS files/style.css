@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+body{
+    background-color: black;
+}
+section{
+    text-align: center;
+    font-family: 'Macondo', cursive;
+    color: white;
+}
+h1,h4{
+    text-align: center;
+    font-family: 'Macondo', cursive;
+    color: white;
+}
+p{
+    padding: 0;
+    text-align: center;
+    font-family: 'Macondo', cursive;
+    color: white;
+}
+a{
+    text-align: center;
+    font-family: 'Macondo', cursive;
+    color: white;
+    text-decoration: none;
+}

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web os home</title>
+    <link rel="stylesheet" href="./css/first.css">
+
+</head>
+<body>
+ <div class="navibar" id="navibar">
+     <ul>
+        <li><button id="AI" onclick="ACB_open()"><i class="fa-solid fa-angle-up"></i></button></li>
+         <li><button onclick="opencolab()"><i class="fas fa-code"></i></button></li>
+         <li><button onclick="calculate()"><i class="fas fa-calculator"></i></button></li>
+         <li><button id="file" onclick="file_Manager_open()"><i class="fas fa-folder-open"></i></button></li>
+         <li><button onclick="clock()"><i class="fas fa-clock"></i></button></li>
+         <li><div id="DigitalCLOCK" class="clock" onload="showTime()"></div></li>
+     </ul>
+ </div>
+
+ <div class="dropdown" id="drop2">
+    <button class="dropbtn"><i class="fas fa-tools"></i></button>
+    <div class="dropdown-content" id="drop">
+ <table>
+   <tr>
+     <th><button onclick="settings_open()"><i class="fas fa-cogs"></i></button></th>
+   </tr>
+   <tr>
+    <th><button onclick="refresh()"><i class="fas fa-sync-alt"></i></button></th>
+   </tr>
+   <tr>
+    <th><button onclick="gaming()"><i class="fas fa-gamepad"></i></button></th>
+   </tr>
+   <tr>
+    <th><button onclick="edit_open()"><i class="fas fa-pen"></i></button></th>
+   </tr>
+ </table>
+    </div>
+  </div>
+  <div class="edit" style="display: none;" id="edit">
+   <table>
+    <th><p>Background</p> <button onclick="background_1()"><i class="fas fa-mountain"></i></button> <button onclick="background_2()"><i class="fas fa-mountain"></i></button> <button onclick="background_3()"><i class="fas fa-mountain"></i></button> <button onclick="background_4()"><i class="fas fa-mountain"></i></button></th>
+  </tr>
+  <tr>
+   <th><p>Navgation bar</p> <button onclick="navbar_1()"><i class="fas fa-palette"></i></button> <button onclick="navbar_2()"><i class="fas fa-palette"></i></button> <button onclick="navbar_3()"><i class="fas fa-palette"></i></button> <button onclick="navbar_4()"><i class="fas fa-palette"></i></button></th>
+  </tr>
+  <tr>
+   <th><p>side menu</p> <button onclick="side_1()"><i class="fas fa-paint-roller"></i></button> <button onclick="side_2()"><i class="fas fa-paint-roller"></i></button> <button onclick="side_3()"><i class="fas fa-paint-roller"></i></button> <button onclick="side_4()"><i class="fas fa-paint-roller"></i></button></th>
+  </tr>
+  <tr>
+    <th><button onclick="edit_close()"><i class="fas fa-times"></i></button></th>
+  </tr>
+  <tr>
+    <th>These changes will be back to normal when refreshed</th>
+  </tr>
+   </table>
+  </div>
+  <div id="mydiv">
+    <div id="mydivheader">Settings <button onclick="settings_close()"><i class="fas fa-window-close"></i></button></div>
+    <table class="settings" id="settings">
+      <tr>
+      <td><button onclick="openSetting1()">About</button></td>
+      </tr>
+      <tr>
+      <td><button onclick="openSetting2()">Other Projects</button></td>
+      </tr>
+      <tr>
+          <td><button onclick="openSetting3()">Credits</button></td>
+      </tr>
+      <tr>
+        <td><button onclick="edit_open()">Castomization</button></td>
+    </tr>
+  </table>
+  </div>
+  <div id="file_Manager">
+    <div id="mydivheader">File Manager <button onclick="file_Manager_close()"><i class="fas fa-window-close"></i></button></div>
+    <div class="Center_Bar" id="file_manager_body">
+      <table>
+     <thead>
+       <tr>
+        <th><button onclick="books_open()">Books</button></th>
+        <th><button onclick="songs_open()">Songs</button></th>
+       <th><button onclick="googleapps_open()">Google</button></th>
+       </tr>
+       <tr>
+         <th><button  onclick="socialm_open()">Social Media</button></th>
+         <th><button onclick="appsy_open()">System Apps</button></th>
+       </tr>
+     </thead>
+      </table>
+     </div>
+  </div>
+  <div class="ACB" id="ACB" style="display: none;">
+    <table>
+     <th><p>AI Chat Bot</p> <input id="search" class="search" placeholder="Talk to our AI" type="text"> <button onclick="terminal()"><i class="fa-solid fa-magnifying-glass"></i></button></th>
+   </tr>
+   <tr>
+    <th><p id="AI_Result"></p></th>
+   </tr>
+   <tr>
+    <th><input id="googlesearch" class="search" type="text" placeholder="Google Search"> <button onclick="GoogleSearch()"><i class="fa-solid fa-magnifying-glass"></i></button></th>
+   </tr>
+   <tr>
+     <th><button onclick="ACB_close()"><i class="fas fa-times"></i></button></th>
+   </tr>
+    </table>
+   </div>
+   <div id="socialm">
+    <div id="mydivheader">Social Media <button onclick="socialm_close()"><i class="fas fa-window-close"></i></button></div>
+    <div class="Center_Bar">
+      <table>
+        <thead>
+         <tr>
+            <th><button onclick="facebook()">Facebook</button></th>
+          </tr>
+          <th><button onclick="instagram()">Instagram</button></th>
+          <tr>
+            <th><button onclick="whatsapp()">whatsapp</button></th>
+          </tr>
+          <tr>
+            <th><button onclick="youtube()">youtube</button></th>
+          </tr>
+          <th><button onclick="twitter()">twitter</button></th>
+          <tr>  
+          </tr>
+        </thead>
+         </table>
+     </div>
+     </div>
+    </div>
+
+    <div id="books" class="draggableCSS">
+      <div id="mydivheader">Books<button onclick="books_close()"><i class="fas fa-window-close"></i></button></div>
+      <div class="center_bar_for_file">
+        <table>
+          <thead>
+            <tr>
+              <th><h1>Book Series : Geronimo Stilton, Author : Elisabetta Dami </h1></th>
+            </tr>
+           <tr>
+              <th><button onclick="openbook1()">Geronimo stilton -A christmas tale</button></th>
+            </tr>
+            <th><button onclick="openbook2()">Geronimo stilton -back in Time</button></th>
+            <tr>
+              <th><button onclick="openbook3()">Geronimo stilton -Bollywood burglary</button></th>
+            </tr>
+            <tr>
+              <th><button onclick="openbook4()">Geronimo stilton -Journey through Time</button></th>
+            </tr>
+            <th><button onclick="openbook5()">Geronimo stilton -I'm too fond of my fur</button></th>
+            <tr>
+              <th><button onclick="openbook6()">Geronimo stilton -the lost treasure of the</button></th>
+            </tr>
+            <tr>
+              <th><button onclick="openbook7()">Geronimo stilton -paws off cheddarface</button></th> 
+            </tr>
+            <tr>
+              <th><button onclick="openbook8()">Geronimo stilton -flight of the red bandit</button></th> 
+            </tr>
+            <tr>
+              <th><button onclick="openbook9()">Geronimo stilton -the curse of the cheese pyramid </button></th> 
+            </tr>
+            <tr>
+              <th><button onclick="openbook10()">Geronimo stilton -the karate mouse</button></th> 
+            </tr>
+            <tr>
+              <th><button onclick="openbook11()">Geronimo stilton -Mystery in Venice</button></th> 
+            </tr>
+            <tr>
+              <th><button onclick="openbook12()">Geronimo stilton -Peculiar pumpkin theif</button></th> 
+            </tr>
+            <tr>
+              <th><button onclick="openbook13()">Geronimo stilton -The way of the samurai</button></th> 
+            </tr>
+            <tr>
+              <th><button onclick="openbook14()">Geronimo stilton -Thea stilton and the dragon's</button></th> 
+            </tr>
+          </thead>
+           </table>
+       </div>
+       </div>
+       
+       <div id="Songs" class="draggableCSS">
+        <div id="mydivheader">Songs<button onclick="songs_close()"><i class="fas fa-window-close"></i></button></div>
+        <div class="center_bar_for_file">
+          <h1>Song taken from YouTube Audio Library</h1>
+          <h1>Singers : Squadda B,Kwon,Dan Henig,Cooper Cannell,Jeremy Black</h1>
+          <table>
+            <thead>
+             <tr>
+           <audio src="./Song/Blackberry K Two - Squadda B (1).mp3" controls></audio>
+             </tr>
+             <tr>
+              <audio src="./Song/Bay Street Billionaires - Squadda B.mp3" controls>
+              </audio>
+             </tr>
+             <tr>
+             <audio src="./Song/Burbank Late Nights - Squadda B.mp3" controls ></audio>
+             <audio src="./Song/Don't Wanna Be - Kwon.mp3" controls></audio>
+            </tr>
+            <tr>
+            <audio src="./Song/North Oakland Extasy - Squadda B.mp3" controls></audio>
+            <audio src="./Song/OSA Dress Code - Squadda B.mp3" controls></audio>
+            </tr>
+            <tr>
+            <audio src="./Song/Space Age Hustle - Squadda B.mp3" controls></audio>
+            <audio src="./Song/Squadda B TV - Squadda B.mp3" controls></audio>
+            </tr>
+            <tr>
+            <audio src="./Song/Squadda Bambino Tumblr - Squadda B.mp3" controls></audio>
+            <audio src="./Song/Subway Dreams - Dan Henig.mp3" controls></audio>
+            </tr>
+            <tr>
+            <audio src="./Song/The Path Starts Here - Cooper Cannell.mp3" controls></audio>
+            <audio src="./Song/Travel Nonstop - Squadda B.mp3" controls></audio>
+            </tr>
+            <tr>
+              <audio src="./Song/West Bad - Jeremy Black (1).mp3" controls></audio>
+            </tr>
+            </thead>
+             </table>
+         </div>
+         </div>
+         </div>
+        
+         <div id="AppsSy" class="draggableCSS">
+          <div id="mydivheader">System Apps<button onclick="appsy_close()"><i class="fas fa-window-close"></i></button></div>
+          <div class="center_bar_for_file">
+            <table>
+              <thead>
+               <tr>
+                  <th><button onclick="settings_open() ">Settings</button></th>
+                </tr>
+                <th><button onclick="clock()">clock</button></th>
+                <tr>
+                  <th><button onclick="calculate()">Calculator</button></th>
+                </tr>
+                <tr>
+                  <th><button onclick="file_Manager_open()">FileManager</button></th>
+                </tr>
+                <th><button onclick="AI_open()">AI-Chat-bot</button></th>
+                <tr>
+                </tr>
+                <tr>
+                  <th><button onclick="edit_open()">Customization</button></th> 
+                </tr>
+              </thead>
+               </table>
+           </div>
+           </div>
+           </div>
+
+           <div id="Google_Apps" class="draggableCSS">
+            <div id="mydivheader">Google Apps<button onclick="googleapps_close()"><i class="fas fa-window-close"></i></button></div>
+            <div class="center_bar_for_file">
+              <table>
+                <thead>
+                 <tr>
+                    <th><button onclick="google()">google</button></th>
+                  </tr>
+                  <th><button onclick="gmail()">Gmail</button></th>
+                  <tr>
+                    <th><button onclick="drive()">Google drive</button></th>
+                  </tr>
+                  <tr>
+                    <th><button onclick="youtube()">youtube</button></th>
+                  </tr>
+                  <th><button onclick="maps()">maps</button></th>
+                  <tr>
+                    <th><button onclick="news()">news</button></th>
+                  </tr>
+                  <tr>
+                    <th><button onclick="meet()">meet</button></th> 
+                  </tr>
+                  <tr>
+                    <th><button onclick="calendar()">calendar</button></th> 
+                  </tr>
+                  <tr>
+                    <th><button onclick="translate()">translate</button></th> 
+                  </tr>
+                  <tr>
+                    <th><button onclick="colab()">Colab</button></th>
+                  </tr>
+                </thead>
+                 </table>
+             </div>
+             </div>
+             </div>
+
+
+             <div class="wrapper" style="background-color: lightblue;">
+              <div class="content">
+                <ul class="menu">
+                  <li class="item center_bar_for_file">
+                    <i class="uil uil-eye center_bar_for_file"></i>
+                    <button onclick="openSetting1()">About Your Pc</button>
+                  </li>
+                      <i class="uil uil-angle-right center_bar_for_file"></i>
+                      <ul class="share-menu">
+                    </ul>
+                  </li>
+                  <li class="item center_bar_for_file ">
+                    <button onclick="refresh()">refresh</button>
+                  </li>
+                  <li class="item center_bar_for_file">
+                   <button onclick="edit_open()">Customize</button>
+                  </li>
+                  <li class="item center_bar_for_file">
+                    <button onclick="notepad_open()">Notepad</button>
+                  </li>
+                </ul>
+                <div class="setting">
+                  <li class="item center_bar_for_file">
+                    <i class="uil uil-setting"></i>
+                    <button onclick="settings_open()">Settings</button>
+                  </li>
+                </div>
+              </div>
+            </div>
+
+            <div id="Notepad" style="display: none;">
+              <div id="mydivheader">Notepad<button onclick="notepad_close()"><i class="fas fa-window-close"></i></button></div>
+              <div class="center_bar_for_file">
+        <textarea name="" id="" cols="65" rows="15" style="border-radius: 15px; font-family:  'Macondo', cursive; resize: none;"></textarea>
+               </div>
+               </div>
+  
+  <script src="https://kit.fontawesome.com/bcfdf83e69.js" crossorigin="anonymous"></script>
+    <script src="./js/second.js"></script>
+</body>
+</html>

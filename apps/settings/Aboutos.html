@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="AboutOS files/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About OS</title>
+    <meta name="theme-color" content="#272c34">
+<body>
+    <h1>About OS</h1>
+    <h4>About your device : </h4>
+    <section>
+    <div class="browser">Browser: <span id="browser"></span></div>
+    <div class="version">Version: <span id="version"></span></div>
+    <div class="layout">Layout: <span id="layout"></span></div>
+    <div class="os">OS: <span id="os"></span></div>
+    <div class="description">Description: <span id="description"></span></div>
+    <div class="product">Product: <span id="product"></span></div>
+    <div class="manifacturer">Manifacturer: <span id="manifacturer"></span></div>
+ </section>
+ <h4>About developer:</h4>
+<p>Developer:  VDVignesh</p>
+<p>Version:  <a href="/coding/Web_os_tripuna/index.html">Web os : 2.0</a></p>
+</tr>
+<tr>
+ <p>Made in which language:  HTML,CSS,JS</p>
+<p>Platform form you downloaded or viewing :  Github</p>
+ <p>Text editor used: Visual Studio Code</p>
+</tr>
+<tr>
+<p>Inspiration:Deepin os,Windows,Mac os</p>
+<p>Code name : Tripuna</p>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/platform/1.3.6/platform.min.js" integrity="sha512-eYPrm8TgYWg3aa6tvSRZjN4v0Z9Qx69q3RhfSj+Mf89QqwOMqmwSlsVqfp4N8NVAcZe/YeUhh9x/nM2CAOp6cA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+     document.getElementById('browser').textContent = platform.name;
+     document.getElementById('version').textContent = platform.version;
+     document.getElementById('layout').textContent = platform.layout;
+     document.getElementById('os').textContent = platform.os;
+     document.getElementById('description').textContent = platform.description;
+     document.getElementById('name').textContent = platform.name
+     document.getElementById('product').textContent = platform.product
+     document.getElementById('manifacturer').textContent = platform.manifacturer
+     document.getElementById('layout').textContent = platform.layout
+     
+        
+    </script>
+
+
+</body></html>
