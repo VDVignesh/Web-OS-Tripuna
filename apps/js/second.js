@@ -877,3 +877,4 @@ function download(){
   anchor.click();
   document.body.removeChild(anchor);
 }
+
