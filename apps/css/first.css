@@ -7,12 +7,13 @@ body{
     margin: auto;
     height: 40vw;
     width: 40vw; 
+    transition: all ease 2.0s;
 }
 @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=IBM+Plex+Sans+Condensed:wght@100&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;1,100&family=Yuji+Syuku&display=swap');
 .navibar{
     background-image: url('https://by3302files.storage.live.com/y4mm8iF_cM3pd_FBB_blyoPT8RrIzfbiaVJZEGME7rqN6lvgvsGH5m7CnKWkLdZYSkj2H5Ec6wPeKmJIuWq6uLh7x7wnZ0XLcmT7rlLhZgVzVGoGxqfVupQMjWSvXkuqXEgScJAmKJMVDUOYJ4oMxkCoMo3JgDZecqgNQdhzZd5jo7N0q1NUdZqQ0WXywmTGUdR?width=1920&height=1080&cropmode=none');
     border-radius: 40px;
-    width: 130%;
+    width: 100%;
     max-height: 1000px;
     position: relative;
     top: 95%;
@@ -26,19 +27,25 @@ body{
 }
 .navibar ul li button{
     display: block;
-    border-radius: 40px;
+    border-radius: 15px;
     font-size: 25px;
-    background-image: url('https://by3302files.storage.live.com/y4mdOURudb-0NNsFr5KoLLV9pggDVuAPGLnQHUAHHmKQ7Zxememj_iKR9L4cI2jctIlx9bciVKm7aI2uYbE0suhVZZwdgDMoqjzSXFHQcAIClBIr2SpywtYTNz4GtG8PmZQcfyzB4WCfDPjZp_tFemrWEuD-22r7uWVHPxMFNU67W9rV6x9sAlUMQSqCkYWsjJQ?width=2048&height=1152&cropmode=none');
     transition: all ease 1.5s;
+    background-image: url('https://by3302files.storage.live.com/y4mm8iF_cM3pd_FBB_blyoPT8RrIzfbiaVJZEGME7rqN6lvgvsGH5m7CnKWkLdZYSkj2H5Ec6wPeKmJIuWq6uLh7x7wnZ0XLcmT7rlLhZgVzVGoGxqfVupQMjWSvXkuqXEgScJAmKJMVDUOYJ4oMxkCoMo3JgDZecqgNQdhzZd5jo7N0q1NUdZqQ0WXywmTGUdR?width=1920&height=1080&cropmode=none');
     font-weight: 1000;
     text-transform: uppercase;
+    border: none;
+    opacity: 1;
+    width: 100%;
 }
 .navibar ul li button:hover{
     background-image: url('https://by3302files.storage.live.com/y4mdOURudb-0NNsFr5KoLLV9pggDVuAPGLnQHUAHHmKQ7Zxememj_iKR9L4cI2jctIlx9bciVKm7aI2uYbE0suhVZZwdgDMoqjzSXFHQcAIClBIr2SpywtYTNz4GtG8PmZQcfyzB4WCfDPjZp_tFemrWEuD-22r7uWVHPxMFNU67W9rV6x9sAlUMQSqCkYWsjJQ?width=2048&height=1152&cropmode=none');
     color: yellow;
     background-color: black;
-
+    font-size: 40px;
+    list-style: lower-latin;
+    opacity: 1;
 }
+
 .search{
     border-radius: 40px;
     border:2px solid orange;
@@ -46,6 +53,7 @@ body{
     transition: all ease 1.5s;
     font-weight: 1000;
     font-family: 'Macondo', cursive;
+    transition: all ease 2.0s
 }
 .search:hover{
     border:3px solid red;
@@ -61,7 +69,8 @@ body{
     position: relative;
     display: inline-block;
     border-radius: 40px;
-    font-size: 40px
+    font-size: 40px;
+    transition: all ease 2.0s
     }
     .dropdown-content {
     display: none;
@@ -72,6 +81,7 @@ body{
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     padding: 12px 16px;
     z-index: 1;
+    transition: all ease 2.0s
   }
   
   .dropdown:hover .dropdown-content {
@@ -104,6 +114,7 @@ body{
   transition: all ease 1.5s;
   font-weight: 1000;
   text-transform: uppercase;
+    border: none;
 }
 .dropdown-content button :hover{
   background-image: url('https://by3302files.storage.live.com/y4mdOURudb-0NNsFr5KoLLV9pggDVuAPGLnQHUAHHmKQ7Zxememj_iKR9L4cI2jctIlx9bciVKm7aI2uYbE0suhVZZwdgDMoqjzSXFHQcAIClBIr2SpywtYTNz4GtG8PmZQcfyzB4WCfDPjZp_tFemrWEuD-22r7uWVHPxMFNU67W9rV6x9sAlUMQSqCkYWsjJQ?width=2048&height=1152&cropmode=none');
@@ -115,6 +126,7 @@ body{
 #edit{
   background-image: url('https://by3302files.storage.live.com/y4mm8iF_cM3pd_FBB_blyoPT8RrIzfbiaVJZEGME7rqN6lvgvsGH5m7CnKWkLdZYSkj2H5Ec6wPeKmJIuWq6uLh7x7wnZ0XLcmT7rlLhZgVzVGoGxqfVupQMjWSvXkuqXEgScJAmKJMVDUOYJ4oMxkCoMo3JgDZecqgNQdhzZd5jo7N0q1NUdZqQ0WXywmTGUdR?width=1920&height=1080&cropmode=none');
   border-radius: 40px;
+  transition: all ease 2.0s
 }
 #edit button{
   border-radius: 40px;
@@ -123,6 +135,7 @@ body{
   transition: all ease 1.5s;
   font-weight: 1000;
   text-transform: uppercase;
+  border: none;
 }
 #edit button:hover{
   background-image: url('https://by3302files.storage.live.com/y4mdOURudb-0NNsFr5KoLLV9pggDVuAPGLnQHUAHHmKQ7Zxememj_iKR9L4cI2jctIlx9bciVKm7aI2uYbE0suhVZZwdgDMoqjzSXFHQcAIClBIr2SpywtYTNz4GtG8PmZQcfyzB4WCfDPjZp_tFemrWEuD-22r7uWVHPxMFNU67W9rV6x9sAlUMQSqCkYWsjJQ?width=2048&height=1152&cropmode=none');
@@ -139,25 +152,10 @@ body{
   font-family: 'Macondo', cursive;
   text-align: center
 }
-
-@media only screen and (max-width: 550px) {
-  .container {
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
-    grid-template-areas:
-      "nav"
-      "sidebar"
-      "main"
-      "content1"
-      "content2"
-      "content3"
-      "footer";
-  }
-}
 #mydiv {
   position: absolute;
   z-index: 9;
-  background-color: #f1f1f1;
+  background-color: #755555;
   text-align: center;
   border: 1px solid #d3d3d3;
   display: none;
@@ -167,17 +165,20 @@ body{
   padding: 10px;
   cursor: move;
   z-index: 10;
-  background-color: #2196F3;
+  background-color: #000000;
   color: #fff;
   border-radius: 40px;
+  transition: all ease 2.0s
 }
 #mydivheader button{
   border-radius: 40px;
-  color : red
+  color : red;
+  border: none;
 }
 .settings{
   background-image: url('https://by3302files.storage.live.com/y4mm8iF_cM3pd_FBB_blyoPT8RrIzfbiaVJZEGME7rqN6lvgvsGH5m7CnKWkLdZYSkj2H5Ec6wPeKmJIuWq6uLh7x7wnZ0XLcmT7rlLhZgVzVGoGxqfVupQMjWSvXkuqXEgScJAmKJMVDUOYJ4oMxkCoMo3JgDZecqgNQdhzZd5jo7N0q1NUdZqQ0WXywmTGUdR?width=1920&height=1080&cropmode=none');
   border-radius: 40px;
+  transition: all ease 2.0;
 }
 .settings th,td{
   border: 1px solid red;
@@ -197,6 +198,7 @@ body{
     padding: 25px; 
     transition: all ease 1.0s;
     border-radius: 40px;
+    border: none;
 }
 .settings button:hover{
   background-color: #ffffff85;
@@ -210,6 +212,7 @@ body{
   border: 1px solid #d3d3d3;
   display: none;
   background: url('');
+  transition: all ease 2.0s
 }
 .Center_Bar{
   background-color: lightblue;
@@ -229,6 +232,7 @@ body{
     padding: 25px; 
     transition: all ease 1.0s;
     border-radius: 40px;
+    border: none;
 }
 .Center_Bar button:hover{
   background-image: url('https://by3302files.storage.live.com/y4mdOURudb-0NNsFr5KoLLV9pggDVuAPGLnQHUAHHmKQ7Zxememj_iKR9L4cI2jctIlx9bciVKm7aI2uYbE0suhVZZwdgDMoqjzSXFHQcAIClBIr2SpywtYTNz4GtG8PmZQcfyzB4WCfDPjZp_tFemrWEuD-22r7uWVHPxMFNU67W9rV6x9sAlUMQSqCkYWsjJQ?width=2048&height=1152&cropmode=none');
@@ -241,6 +245,7 @@ body{
   position: relative;
   right: -100px;
   bottom: -80px;
+  transition: all ease 2.0s
 }
 #ACB button{
   border-radius: 40px;
@@ -249,6 +254,7 @@ body{
   transition: all ease 1.5s;
   font-weight: 1000;
   text-transform: uppercase;
+  border: none;
 }
 #ACB button:hover{
   background-image: url('https://by3302files.storage.live.com/y4mdOURudb-0NNsFr5KoLLV9pggDVuAPGLnQHUAHHmKQ7Zxememj_iKR9L4cI2jctIlx9bciVKm7aI2uYbE0suhVZZwdgDMoqjzSXFHQcAIClBIr2SpywtYTNz4GtG8PmZQcfyzB4WCfDPjZp_tFemrWEuD-22r7uWVHPxMFNU67W9rV6x9sAlUMQSqCkYWsjJQ?width=2048&height=1152&cropmode=none');
@@ -274,6 +280,7 @@ body{
     width: 300px;
     font-family: 'Times New Roman', Times, serif;
     font-size: 15px;
+    border: none;
 }
 #socialm .Center_Bar button i {
   font-size: 25px
@@ -284,7 +291,7 @@ body{
   background-color: #f1f1f1;
   border: 1px solid #d3d3d3;
   text-align: center;
-  width: 600px;
+  width: 100%;
   background-color: lightblue;
   border-radius: 40px ;
   display: none;
@@ -296,6 +303,8 @@ body{
   width: 300px;
   font-family: 'Times New Roman', Times, serif;
   font-size: 15px;
+  border: none;
+  border: none;
 }
 .center_bar_for_file audio{
   background-color: lightblue;
@@ -371,4 +380,8 @@ background: url('https://by3302files.storage.live.com/y4mm8iF_cM3pd_FBB_blyoPT8R
 .share:hover .share-menu{
   opacity: 1;
   pointer-events: auto;
+}
+.cons button{
+  display: inline-block;
+  
 }
