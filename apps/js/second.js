@@ -90,21 +90,21 @@ if(myArray.includes('Maps')){
     open=window.open("https://maps.google.com","width=100px","height=100px")
 }
   if(myArray.includes('news')){
-    open=window.open("https://news.google.com","width=100px","height=100px")
+    open =window.open("https://news.google.com","width=100px","height=100px")
 }
      if(myArray.includes('Meet')){
-    open=window.open("https://meet.google.com","width=100px","height=100px")
+    open =window.open("https://meet.google.com","width=100px","height=100px")
 }    if(myArray.includes('calendar')){
-    open=window.open("https://calendar.google.com.com","width=100px","height=100px")
+    open =window.open("https://calendar.google.com","width=100px","height=100px")
 }    if(myArray.includes('translate')){
-    open=window.open("https://translate.google.com","width=100px","height=100px")
+    open =window.open("https://translate.google.com","width=100px","height=100px")
 }    if(myArray.includes('fonts')){
-    open=window.open("https://fonts.google.com","width=100px","height=100px")
+    open =window.open("https://fonts.google.com","width=100px","height=100px")
 }    if(myArray.includes('colab')){
-    open=window.open("https://colab.research.google.com","width=100px","height=100px")
+    open =window.open("https://colab.research.google.com","width=100px","height=100px")
 }
     if(myArray.includes('clock')){
-      open=window.open("./clock/clock.html","width=100px","height=100px")
+      open =window.open("./clock/clock.html","width=100px","height=100px")
     }
     if(myArray.includes('calculator')){
       open=window.open("./calculator/index.html","width=100px","height=100px")
@@ -134,7 +134,89 @@ if(myArray.includes('Maps')){
       document.getElementById("navibar").style.background = "url('https://by3302files.storage.live.com/y4mm8iF_cM3pd_FBB_blyoPT8RrIzfbiaVJZEGME7rqN6lvgvsGH5m7CnKWkLdZYSkj2H5Ec6wPeKmJIuWq6uLh7x7wnZ0XLcmT7rlLhZgVzVGoGxqfVupQMjWSvXkuqXEgScJAmKJMVDUOYJ4oMxkCoMo3JgDZecqgNQdhzZd5jo7N0q1NUdZqQ0WXywmTGUdR?width=1920&height=1080&cropmode=none')";
       document.getElementById("test").style.background = "url('https://by3302files.storage.live.com/y4mm8iF_cM3pd_FBB_blyoPT8RrIzfbiaVJZEGME7rqN6lvgvsGH5m7CnKWkLdZYSkj2H5Ec6wPeKmJIuWq6uLh7x7wnZ0XLcmT7rlLhZgVzVGoGxqfVupQMjWSvXkuqXEgScJAmKJMVDUOYJ4oMxkCoMo3JgDZecqgNQdhzZd5jo7N0q1NUdZqQ0WXywmTGUdR?width=1920&height=1080&cropmode=none')"
   }
+  if(myArray.includes('hi')){
+    AI_Result.innerHTML = "Hello how are you doing"
+   }
+   if(myArray.includes('Hi')){
+    AI_Result.innerHTML = "Hello how are you doing"
+   }
+   if(myArray.includes('HI')){
+    AI_Result.innerHTML = "Hello how are you doing"
+   }
+   if(myArray.includes('fine')){
+    AI_Result.innerHTML = "Fine too"
+   }
+   if(myArray.includes('Fine')){
+    AI_Result.innerHTML = "Fine too"
+   }
+   if(myArray.includes('hello')){
+    AI_Result.innerHTML = "Hi how are you doing"
+   }
+   if(myArray.includes('Hello')){
+    AI_Result.innerHTML = "Hi how are you doing"
+   }
+   if(myArray.includes('thank')){
+    AI_Result.innerHTML = "I am Glad To Serve You"
+   }
+   if(myArray.includes('Thank')){
+    AI_Result.innerHTML = "I am Glad To Serve You"
+   }
+   if(myArray.includes('thanks')){
+    AI_Result.innerHTML = "I am Glad To Serve You"
+   }
+   if(myArray.includes('Thanks')){
+    AI_Result.innerHTML = "I am Glad To Serve You"
+   }
+   if(myArray.includes('bye')){
+    AI_Result.innerHTML = "See You next time"
+   }
+   if(myArray.includes('Bye')){
+    AI_Result.innerHTML = "See You next time"
+   }
 
+   var cars = ["I am Not the best Joker out there ","Be Useless So One can use you","Dear User after a lot of research i finally found out your birth place is Mistaka island",'What gets more wet the more it dries? A towel!','Why should you never trust stairs? They re always up to something.','Hear about the new restaurant called Karma? Theres no menu: You get what you deserve.','What did one ocean say to the other ocean? Nothing, they just waved.','Why were the parents so afraid of the energy drink? It was a Monster!']
+   var wordgen = cars[Math.floor(Math.random() * cars.length)];
+   if(myArray.includes('Jokes')){
+      AI_Result.innerHTML = wordgen;
+   }
+   if(myArray.includes('jokes')){
+    AI_Result.innerHTML = wordgen;
+ }
+ var riddles = ["Once upon a time there live AI Voice named Ravi He Lived Some Where Around the Indian subcontinent clouds Then A person who  made gates adopted him so That is the gate makers real name Answer : Bill Gates",'What month of the year has 28 days? Answer: All of them','What is full of holes but still holds water Answer: A sponge','What question can you never answer yes to? Answer: Are you asleep yet?','What is always in front of you but cant be seen? Answer: The future','Theres a one-story house in which everything is yellow. Yellow walls, yellow doors, yellow furniture. What color are the stairs? Answer: There arent any—its a one-story house.']
+ var riddlegen = riddles[Math.floor(Math.random() * riddles.length)];
+ if(myArray.includes('Riddles')){
+  AI_Result.innerHTML = riddlegen;
+}
+if(myArray.includes('riddles')){
+  AI_Result.innerHTML = riddlegen;
+}
+if(myArray.includes('who')){
+  AI_Result.innerHTML = "I am AI_chatBot in WebOS-Tripuna"
+}
+if(myArray.includes('how')){
+  AI_Result.innerHTML = "I am fine thank you"
+}
+if(myArray.includes('Who')){
+  AI_Result.innerHTML = "I am AI_chatBot in WebOS-Tripuna"
+}
+if(myArray.includes('Mars')){
+  AI_Result.innerHTML = "Mars has almost no surface water; a toxic atmosphere that is too thin for humans to survive without pressure suits; deadly solar radiation; temperatures lower than Antarctica; and few to none of the natural resources that have been critical to human success on Earth After All this Why Do you really want to go to mars but for a AI Like me This is not my problem beacuse i live in the cloud storage it would be problematic for me when there is no human left in earth"
+}
+if(myArray.includes('mars')){
+  AI_Result.innerHTML = "Mars has almost no surface water; a toxic atmosphere that is too thin for humans to survive without pressure suits; deadly solar radiation; temperatures lower than Antarctica; and few to none of the natural resources that have been critical to human success on Earth After All this Why Do you really want to go to mars but for a AI Like me This is not my problem beacuse i live in the cloud storage it would be problematic for me when there is no human left in earth"
+}
+if(myArray.includes('Hydroponics')){
+  AI_Result.innerHTML = "Putting together a hydroponic system isn't cheap Constant monitoring is required Hydroponic systems are vulnerable to power outages In the event of a power outage that outlasts your generators you will be manually watering your garden Micro-organisms that are water-based can creep in rather easily Growing a hydroponic garden demands technical expertise Production is limited compared to field conditions If a disease appears all plants in the system will be affected Without soil to serve as a buffer if the system fails plant death will occur rapidly A DIY terrace garden Will be Cheap and Good for you"
+}
+if(myArray.includes('hydroponics')){
+  AI_Result.innerHTML = "Putting together a hydroponic system isn't cheap Constant monitoring is required Hydroponic systems are vulnerable to power outages In the event of a power outage that outlasts your generators you will be manually watering your garden Micro-organisms that are water-based can creep in rather easily Growing a hydroponic garden demands technical expertise Production is limited compared to field conditions If a disease appears all plants in the system will be affected Without soil to serve as a buffer if the system fails plant death will occur rapidly A DIY terrace garden Will be Cheap and Good for you"
+}
+if(myArray.includes('animation')){
+  AI_Result.innerHTML  = "The animation technology is created to interact with the students. It cannot recognize the creative factor in the batch of students. Some might be able to use it while others may not Animation technology uses more storage and memory space. It uses more bandwidth and requires high speed and uninterrupted internet connection. I Suggest you to use animatic it would be Easy for you Popular Animation YouTube Creators Use it also. Tools Like Animaker  Mango Animate Vyond Animation Comes in Handy"
+}
+if(myArray.includes('Animation')){
+  AI_Result.innerHTML  = "The animation technology is created to interact with the students. It cannot recognize the creative factor in the batch of students. Some might be able to use it while others may not Animation technology uses more storage and memory space. It uses more bandwidth and requires high speed and uninterrupted internet connection. I Suggest you to use animatic it would be Easy for you Popular Animation YouTube Creators Use it also. Tools Like Animaker  Mango Animate Vyond Animation Comes in Handy"
+}
 }
 function showTime(){
     var date = new Date();
@@ -178,15 +260,39 @@ function background_4(){
 }
 function navbar_1(){
     document.getElementById("navibar").style.background = "url('https://by3302files.storage.live.com/y4mdOURudb-0NNsFr5KoLLV9pggDVuAPGLnQHUAHHmKQ7Zxememj_iKR9L4cI2jctIlx9bciVKm7aI2uYbE0suhVZZwdgDMoqjzSXFHQcAIClBIr2SpywtYTNz4GtG8PmZQcfyzB4WCfDPjZp_tFemrWEuD-22r7uWVHPxMFNU67W9rV6x9sAlUMQSqCkYWsjJQ?width=2048&height=1152&cropmode=none')";
+    document.getElementById("DigitalCLOCK").style.background = "url('https://by3302files.storage.live.com/y4mdOURudb-0NNsFr5KoLLV9pggDVuAPGLnQHUAHHmKQ7Zxememj_iKR9L4cI2jctIlx9bciVKm7aI2uYbE0suhVZZwdgDMoqjzSXFHQcAIClBIr2SpywtYTNz4GtG8PmZQcfyzB4WCfDPjZp_tFemrWEuD-22r7uWVHPxMFNU67W9rV6x9sAlUMQSqCkYWsjJQ?width=2048&height=1152&cropmode=none')";
+    document.getElementById("ClockButton").style.background =  "url('https://by3302files.storage.live.com/y4mdOURudb-0NNsFr5KoLLV9pggDVuAPGLnQHUAHHmKQ7Zxememj_iKR9L4cI2jctIlx9bciVKm7aI2uYbE0suhVZZwdgDMoqjzSXFHQcAIClBIr2SpywtYTNz4GtG8PmZQcfyzB4WCfDPjZp_tFemrWEuD-22r7uWVHPxMFNU67W9rV6x9sAlUMQSqCkYWsjJQ?width=2048&height=1152&cropmode=none')";
+    document.getElementById("file").style.background = "url('https://by3302files.storage.live.com/y4mdOURudb-0NNsFr5KoLLV9pggDVuAPGLnQHUAHHmKQ7Zxememj_iKR9L4cI2jctIlx9bciVKm7aI2uYbE0suhVZZwdgDMoqjzSXFHQcAIClBIr2SpywtYTNz4GtG8PmZQcfyzB4WCfDPjZp_tFemrWEuD-22r7uWVHPxMFNU67W9rV6x9sAlUMQSqCkYWsjJQ?width=2048&height=1152&cropmode=none')";
+    document.getElementById("calculatebutton").style.background = "url('https://by3302files.storage.live.com/y4mdOURudb-0NNsFr5KoLLV9pggDVuAPGLnQHUAHHmKQ7Zxememj_iKR9L4cI2jctIlx9bciVKm7aI2uYbE0suhVZZwdgDMoqjzSXFHQcAIClBIr2SpywtYTNz4GtG8PmZQcfyzB4WCfDPjZp_tFemrWEuD-22r7uWVHPxMFNU67W9rV6x9sAlUMQSqCkYWsjJQ?width=2048&height=1152&cropmode=none')";
+    document.getElementById("ColabButton").style.background ="url('https://by3302files.storage.live.com/y4mdOURudb-0NNsFr5KoLLV9pggDVuAPGLnQHUAHHmKQ7Zxememj_iKR9L4cI2jctIlx9bciVKm7aI2uYbE0suhVZZwdgDMoqjzSXFHQcAIClBIr2SpywtYTNz4GtG8PmZQcfyzB4WCfDPjZp_tFemrWEuD-22r7uWVHPxMFNU67W9rV6x9sAlUMQSqCkYWsjJQ?width=2048&height=1152&cropmode=none')";
+    document.getElementById("AI").style.background ="url('https://by3302files.storage.live.com/y4mdOURudb-0NNsFr5KoLLV9pggDVuAPGLnQHUAHHmKQ7Zxememj_iKR9L4cI2jctIlx9bciVKm7aI2uYbE0suhVZZwdgDMoqjzSXFHQcAIClBIr2SpywtYTNz4GtG8PmZQcfyzB4WCfDPjZp_tFemrWEuD-22r7uWVHPxMFNU67W9rV6x9sAlUMQSqCkYWsjJQ?width=2048&height=1152&cropmode=none')";
 }
 function navbar_2(){
     document.getElementById("navibar").style.background = "url('https://by3302files.storage.live.com/y4mnZZYTbgd368VQHPbDEHK0egGK_vqXg9Ur8hnssovyXkeJBHE780tmFasYI64gxArlh4fIheAgFKwWPlQG46i1pUnJBTCo6DfODzCGrSidZbSzm4pQotHbOW2QNHmFvXVtzBEhqZ0hfMVOOtToUGRg3VH_fhbEcESqEXSPLxxWEpOTtor0uYVy2A9YFuyLOjT?width=1920&height=1080&cropmode=none')";
+    document.getElementById("DigitalCLOCK").style.background = "url('https://by3302files.storage.live.com/y4mnZZYTbgd368VQHPbDEHK0egGK_vqXg9Ur8hnssovyXkeJBHE780tmFasYI64gxArlh4fIheAgFKwWPlQG46i1pUnJBTCo6DfODzCGrSidZbSzm4pQotHbOW2QNHmFvXVtzBEhqZ0hfMVOOtToUGRg3VH_fhbEcESqEXSPLxxWEpOTtor0uYVy2A9YFuyLOjT?width=1920&height=1080&cropmode=none')";
+    document.getElementById("ClockButton").style.background = "url('https://by3302files.storage.live.com/y4mnZZYTbgd368VQHPbDEHK0egGK_vqXg9Ur8hnssovyXkeJBHE780tmFasYI64gxArlh4fIheAgFKwWPlQG46i1pUnJBTCo6DfODzCGrSidZbSzm4pQotHbOW2QNHmFvXVtzBEhqZ0hfMVOOtToUGRg3VH_fhbEcESqEXSPLxxWEpOTtor0uYVy2A9YFuyLOjT?width=1920&height=1080&cropmode=none')";
+    document.getElementById("file").style.background = "url('https://by3302files.storage.live.com/y4mnZZYTbgd368VQHPbDEHK0egGK_vqXg9Ur8hnssovyXkeJBHE780tmFasYI64gxArlh4fIheAgFKwWPlQG46i1pUnJBTCo6DfODzCGrSidZbSzm4pQotHbOW2QNHmFvXVtzBEhqZ0hfMVOOtToUGRg3VH_fhbEcESqEXSPLxxWEpOTtor0uYVy2A9YFuyLOjT?width=1920&height=1080&cropmode=none')";
+    document.getElementById("calculatebutton").style.background ="url('https://by3302files.storage.live.com/y4mnZZYTbgd368VQHPbDEHK0egGK_vqXg9Ur8hnssovyXkeJBHE780tmFasYI64gxArlh4fIheAgFKwWPlQG46i1pUnJBTCo6DfODzCGrSidZbSzm4pQotHbOW2QNHmFvXVtzBEhqZ0hfMVOOtToUGRg3VH_fhbEcESqEXSPLxxWEpOTtor0uYVy2A9YFuyLOjT?width=1920&height=1080&cropmode=none')";
+    document.getElementById("ColabButton").style.background ="url('https://by3302files.storage.live.com/y4mnZZYTbgd368VQHPbDEHK0egGK_vqXg9Ur8hnssovyXkeJBHE780tmFasYI64gxArlh4fIheAgFKwWPlQG46i1pUnJBTCo6DfODzCGrSidZbSzm4pQotHbOW2QNHmFvXVtzBEhqZ0hfMVOOtToUGRg3VH_fhbEcESqEXSPLxxWEpOTtor0uYVy2A9YFuyLOjT?width=1920&height=1080&cropmode=none')";
+    document.getElementById("AI").style.background = "url('https://by3302files.storage.live.com/y4mnZZYTbgd368VQHPbDEHK0egGK_vqXg9Ur8hnssovyXkeJBHE780tmFasYI64gxArlh4fIheAgFKwWPlQG46i1pUnJBTCo6DfODzCGrSidZbSzm4pQotHbOW2QNHmFvXVtzBEhqZ0hfMVOOtToUGRg3VH_fhbEcESqEXSPLxxWEpOTtor0uYVy2A9YFuyLOjT?width=1920&height=1080&cropmode=none')";
 }
 function navbar_3(){
     document.getElementById("navibar").style.background = "url('https://by3302files.storage.live.com/y4mm8iF_cM3pd_FBB_blyoPT8RrIzfbiaVJZEGME7rqN6lvgvsGH5m7CnKWkLdZYSkj2H5Ec6wPeKmJIuWq6uLh7x7wnZ0XLcmT7rlLhZgVzVGoGxqfVupQMjWSvXkuqXEgScJAmKJMVDUOYJ4oMxkCoMo3JgDZecqgNQdhzZd5jo7N0q1NUdZqQ0WXywmTGUdR?width=1920&height=1080&cropmode=none')";
+    document.getElementById("DigitalCLOCK").style.background = "url('https://by3302files.storage.live.com/y4mm8iF_cM3pd_FBB_blyoPT8RrIzfbiaVJZEGME7rqN6lvgvsGH5m7CnKWkLdZYSkj2H5Ec6wPeKmJIuWq6uLh7x7wnZ0XLcmT7rlLhZgVzVGoGxqfVupQMjWSvXkuqXEgScJAmKJMVDUOYJ4oMxkCoMo3JgDZecqgNQdhzZd5jo7N0q1NUdZqQ0WXywmTGUdR?width=1920&height=1080&cropmode=none')";
+    document.getElementById("ClockButton").style.background = "url('https://by3302files.storage.live.com/y4mm8iF_cM3pd_FBB_blyoPT8RrIzfbiaVJZEGME7rqN6lvgvsGH5m7CnKWkLdZYSkj2H5Ec6wPeKmJIuWq6uLh7x7wnZ0XLcmT7rlLhZgVzVGoGxqfVupQMjWSvXkuqXEgScJAmKJMVDUOYJ4oMxkCoMo3JgDZecqgNQdhzZd5jo7N0q1NUdZqQ0WXywmTGUdR?width=1920&height=1080&cropmode=none')";
+    document.getElementById("file").style.background = "url('https://by3302files.storage.live.com/y4mm8iF_cM3pd_FBB_blyoPT8RrIzfbiaVJZEGME7rqN6lvgvsGH5m7CnKWkLdZYSkj2H5Ec6wPeKmJIuWq6uLh7x7wnZ0XLcmT7rlLhZgVzVGoGxqfVupQMjWSvXkuqXEgScJAmKJMVDUOYJ4oMxkCoMo3JgDZecqgNQdhzZd5jo7N0q1NUdZqQ0WXywmTGUdR?width=1920&height=1080&cropmode=none')";
+    document.getElementById("calculatebutton").style.background = "url('https://by3302files.storage.live.com/y4mm8iF_cM3pd_FBB_blyoPT8RrIzfbiaVJZEGME7rqN6lvgvsGH5m7CnKWkLdZYSkj2H5Ec6wPeKmJIuWq6uLh7x7wnZ0XLcmT7rlLhZgVzVGoGxqfVupQMjWSvXkuqXEgScJAmKJMVDUOYJ4oMxkCoMo3JgDZecqgNQdhzZd5jo7N0q1NUdZqQ0WXywmTGUdR?width=1920&height=1080&cropmode=none')";
+    document.getElementById("ColabButton").style.background = "url('https://by3302files.storage.live.com/y4mm8iF_cM3pd_FBB_blyoPT8RrIzfbiaVJZEGME7rqN6lvgvsGH5m7CnKWkLdZYSkj2H5Ec6wPeKmJIuWq6uLh7x7wnZ0XLcmT7rlLhZgVzVGoGxqfVupQMjWSvXkuqXEgScJAmKJMVDUOYJ4oMxkCoMo3JgDZecqgNQdhzZd5jo7N0q1NUdZqQ0WXywmTGUdR?width=1920&height=1080&cropmode=none')";
+    document.getElementById("AI").style.background = "url('https://by3302files.storage.live.com/y4mm8iF_cM3pd_FBB_blyoPT8RrIzfbiaVJZEGME7rqN6lvgvsGH5m7CnKWkLdZYSkj2H5Ec6wPeKmJIuWq6uLh7x7wnZ0XLcmT7rlLhZgVzVGoGxqfVupQMjWSvXkuqXEgScJAmKJMVDUOYJ4oMxkCoMo3JgDZecqgNQdhzZd5jo7N0q1NUdZqQ0WXywmTGUdR?width=1920&height=1080&cropmode=none')";
 }
 function navbar_4(){
     document.getElementById("navibar").style.background = "url('https://by3302files.storage.live.com/y4m2r0Nn8jBzcLvwo-ONXozOYEb2RGxDm6xi75iqtnhlnbSzkr-PC9uuSurJRbkuvo4yTzsSJOU16jUpEOqJritPvvYCI95qY-fzfXkjoz2xM5gUAs5mxTbgTfvDQxOOgVtjTvXwf74D3GYtFikHpBbHSu9xJQvkTUDBYjNXkE5vc322kF5b5SdEpymt2AGzGXh?width=1920&height=1080&cropmode=none')";
+    document.getElementById("DigitalCLOCK").style.background =  "url('https://by3302files.storage.live.com/y4m2r0Nn8jBzcLvwo-ONXozOYEb2RGxDm6xi75iqtnhlnbSzkr-PC9uuSurJRbkuvo4yTzsSJOU16jUpEOqJritPvvYCI95qY-fzfXkjoz2xM5gUAs5mxTbgTfvDQxOOgVtjTvXwf74D3GYtFikHpBbHSu9xJQvkTUDBYjNXkE5vc322kF5b5SdEpymt2AGzGXh?width=1920&height=1080&cropmode=none')";
+    document.getElementById("ClockButton").style.background = "url('https://by3302files.storage.live.com/y4m2r0Nn8jBzcLvwo-ONXozOYEb2RGxDm6xi75iqtnhlnbSzkr-PC9uuSurJRbkuvo4yTzsSJOU16jUpEOqJritPvvYCI95qY-fzfXkjoz2xM5gUAs5mxTbgTfvDQxOOgVtjTvXwf74D3GYtFikHpBbHSu9xJQvkTUDBYjNXkE5vc322kF5b5SdEpymt2AGzGXh?width=1920&height=1080&cropmode=none')";
+    document.getElementById("file").style.background = "url('https://by3302files.storage.live.com/y4m2r0Nn8jBzcLvwo-ONXozOYEb2RGxDm6xi75iqtnhlnbSzkr-PC9uuSurJRbkuvo4yTzsSJOU16jUpEOqJritPvvYCI95qY-fzfXkjoz2xM5gUAs5mxTbgTfvDQxOOgVtjTvXwf74D3GYtFikHpBbHSu9xJQvkTUDBYjNXkE5vc322kF5b5SdEpymt2AGzGXh?width=1920&height=1080&cropmode=none')";
+    document.getElementById("calculatebutton").style.background = "url('https://by3302files.storage.live.com/y4m2r0Nn8jBzcLvwo-ONXozOYEb2RGxDm6xi75iqtnhlnbSzkr-PC9uuSurJRbkuvo4yTzsSJOU16jUpEOqJritPvvYCI95qY-fzfXkjoz2xM5gUAs5mxTbgTfvDQxOOgVtjTvXwf74D3GYtFikHpBbHSu9xJQvkTUDBYjNXkE5vc322kF5b5SdEpymt2AGzGXh?width=1920&height=1080&cropmode=none')";
+    document.getElementById("ColabButton").style.background = "url('https://by3302files.storage.live.com/y4m2r0Nn8jBzcLvwo-ONXozOYEb2RGxDm6xi75iqtnhlnbSzkr-PC9uuSurJRbkuvo4yTzsSJOU16jUpEOqJritPvvYCI95qY-fzfXkjoz2xM5gUAs5mxTbgTfvDQxOOgVtjTvXwf74D3GYtFikHpBbHSu9xJQvkTUDBYjNXkE5vc322kF5b5SdEpymt2AGzGXh?width=1920&height=1080&cropmode=none')";
+    document.getElementById("AI").style.background = "url('https://by3302files.storage.live.com/y4m2r0Nn8jBzcLvwo-ONXozOYEb2RGxDm6xi75iqtnhlnbSzkr-PC9uuSurJRbkuvo4yTzsSJOU16jUpEOqJritPvvYCI95qY-fzfXkjoz2xM5gUAs5mxTbgTfvDQxOOgVtjTvXwf74D3GYtFikHpBbHSu9xJQvkTUDBYjNXkE5vc322kF5b5SdEpymt2AGzGXh?width=1920&height=1080&cropmode=none')";
 }
 function side_1(){
     document.getElementById("drop").style.background = "url('https://by3302files.storage.live.com/y4mdOURudb-0NNsFr5KoLLV9pggDVuAPGLnQHUAHHmKQ7Zxememj_iKR9L4cI2jctIlx9bciVKm7aI2uYbE0suhVZZwdgDMoqjzSXFHQcAIClBIr2SpywtYTNz4GtG8PmZQcfyzB4WCfDPjZp_tFemrWEuD-22r7uWVHPxMFNU67W9rV6x9sAlUMQSqCkYWsjJQ?width=2048&height=1152&cropmode=none')";
@@ -642,7 +748,7 @@ function maps(){
   ope2n=window.open("https://meet.google.com","width=100px","height=100px")
 }
 function calendar(){
-  open2=window.open("https://calendar.google.com.com","width=100px","height=100px")
+  open2=window.open("https://calendar.google.com","width=100px","height=100px")
 } 
 function translate(){
   open2=window.open("https://translate.google.com","width=100px","height=100px")
@@ -742,4 +848,32 @@ function GoogleSearch(){
   var wiki = "https://google.com/search?q="
   var info = wiki + googlesearch;
   open2 = window.open(info,"width=100px","height=100px")
+}
+
+const listenBtn = document.getElementById('myvoice');
+
+listenBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+
+  const msg = new SpeechSynthesisUtterance(
+    AI_Result.textContent 
+  );
+  msg.lang = "en-IN";
+  msg.volume = 1;
+  window.speechSynthesis.speak(msg);
+
+});
+
+function download(){
+  var text = document.getElementById("textarea").value;
+  text = text.replace(/\n/g, "\r\n"); // To retain the Line breaks.
+  var blob = new Blob([text], { type: "text/plain"});
+  var anchor = document.createElement("a");
+  anchor.download = document.getElementById('Savefilename').value
+  anchor.href = window.URL.createObjectURL(blob);
+  anchor.target ="_blank";
+  anchor.style.display = "none"; // just to be safe!
+  document.body.appendChild(anchor);
+  anchor.click();
+  document.body.removeChild(anchor);
 }
