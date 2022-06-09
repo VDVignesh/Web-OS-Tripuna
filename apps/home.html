@@ -12,10 +12,10 @@
  <div class="navibar" id="navibar">
      <ul>
         <li><button id="AI" onclick="ACB_open()"><i class="fa-solid fa-angle-up"></i></button></li>
-         <li><button onclick="opencolab()"><i class="fas fa-code"></i></button></li>
-         <li><button onclick="calculate()"><i class="fas fa-calculator"></i></button></li>
+         <li><button id="ColabButton" onclick="opencolab()"><i class="fas fa-code"></i></button></li>
+         <li><button id="calculatebutton" onclick="calculate()"><i class="fas fa-calculator"></i></button></li>
          <li><button id="file" onclick="file_Manager_open()"><i class="fas fa-folder-open"></i></button></li>
-         <li><button onclick="clock()"><i class="fas fa-clock"></i></button></li>
+         <li><button id="ClockButton" onclick="clock()"><i class="fas fa-clock"></i></button></li>
          <li><div id="DigitalCLOCK" class="clock" onload="showTime()"></div></li>
      </ul>
  </div>
@@ -94,7 +94,7 @@
   </div>
   <div class="ACB" id="ACB" style="display: none;">
     <table>
-     <th><p>AI Chat Bot</p> <input id="search" class="search" placeholder="Talk to our AI" type="text"> <button onclick="terminal()"><i class="fa-solid fa-magnifying-glass"></i></button></th>
+     <th><p>AI Chat Bot</p> <input id="search" class="search" placeholder="Talk to our AI" type="text"> <button onclick="terminal()"><i class="fa-solid fa-magnifying-glass"></i></button> <button id="myvoice"><i class="fa-solid fa-volume-high"></i></button></th>
    </tr>
    <tr>
     <th><p id="AI_Result"></p></th>
@@ -160,7 +160,7 @@
               <th><button onclick="openbook8()">Geronimo stilton -flight of the red bandit</button></th> 
             </tr>
             <tr>
-              <th><button onclick="openbook9()">Geronimo stilton -the curse of the cheese pyramid </button></th> 
+              <th><button onclick="openbook9()">Geronimo stilton -the curse of the cheese</button></th> 
             </tr>
             <tr>
               <th><button onclick="openbook10()">Geronimo stilton -the karate mouse</button></th> 
@@ -323,10 +323,13 @@
             <div id="Notepad" style="display: none;">
               <div id="mydivheader">Notepad<button onclick="notepad_close()"><i class="fas fa-window-close"></i></button></div>
               <div class="center_bar_for_file">
-        <textarea name="" id="" cols="65" rows="15" style="border-radius: 15px; font-family:  'Macondo', cursive; resize: none;"></textarea>
+                <div class="cons" style="background-color: lightblue;">
+                  <button onclick="download()"><i class="fa-solid fa-download"></i></button>
+                  <input id="Savefilename" type="text" class="search" placeholder="File Name + Extension eg: .PDF,.TXT if you are downloading the file" style="width: 500px;">
+                </div>
+        <textarea id="textarea" cols="65" rows="15" style="border-radius: 15px; font-family:  'Macondo', cursive; resize: none;"></textarea>
                </div>
                </div>
-  
   <script src="https://kit.fontawesome.com/bcfdf83e69.js" crossorigin="anonymous"></script>
     <script src="./js/second.js"></script>
 </body>
