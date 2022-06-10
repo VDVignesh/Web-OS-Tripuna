@@ -212,27 +212,18 @@ body{
   border: 1px solid #d3d3d3;
   display: none;
   background: url('');
-  transition: all ease 2.0s
 }
 .Center_Bar{
   background-color: lightblue;
 }
 .Center_Bar button{
-  font-size: 40px;
-  color: red;
-  font-family: 'Macondo', cursive;
-  display: block;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: orange;
-    font-size: 30px;
-    font-family: 'Macondo', cursive;
-    letter-spacing: 2px;
-    font-weight: 600;
-    padding: 25px; 
-    transition: all ease 1.0s;
-    border-radius: 40px;
-    border: none;
+  background-color: lightblue;
+  border-radius: 40px;
+  height: 25px;
+  width: 300px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 15px;
+  border: none;
 }
 .Center_Bar button:hover{
   background-image: url('https://by3302files.storage.live.com/y4mdOURudb-0NNsFr5KoLLV9pggDVuAPGLnQHUAHHmKQ7Zxememj_iKR9L4cI2jctIlx9bciVKm7aI2uYbE0suhVZZwdgDMoqjzSXFHQcAIClBIr2SpywtYTNz4GtG8PmZQcfyzB4WCfDPjZp_tFemrWEuD-22r7uWVHPxMFNU67W9rV6x9sAlUMQSqCkYWsjJQ?width=2048&height=1152&cropmode=none');
