@@ -172,8 +172,16 @@ body{
 }
 #mydivheader button{
   border-radius: 40px;
-  color : red;
+  color : white;
+  font-size: 13px;
+  background-color: #000000;
   border: none;
+  position: absolute;
+  right: 10px;
+}
+#mydivheader button:hover{
+  transition: all ease 1.2s;
+  color: red;
 }
 .settings{
   background-image: url('https://by3302files.storage.live.com/y4mm8iF_cM3pd_FBB_blyoPT8RrIzfbiaVJZEGME7rqN6lvgvsGH5m7CnKWkLdZYSkj2H5Ec6wPeKmJIuWq6uLh7x7wnZ0XLcmT7rlLhZgVzVGoGxqfVupQMjWSvXkuqXEgScJAmKJMVDUOYJ4oMxkCoMo3JgDZecqgNQdhzZd5jo7N0q1NUdZqQ0WXywmTGUdR?width=1920&height=1080&cropmode=none');
@@ -217,13 +225,21 @@ body{
   background-color: lightblue;
 }
 .Center_Bar button{
-  background-color: lightblue;
-  border-radius: 40px;
-  height: 25px;
-  width: 300px;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 15px;
-  border: none;
+  font-size: 40px;
+  color: red;
+  font-family: 'Macondo', cursive;
+  display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: orange;
+    font-size: 30px;
+    font-family: 'Macondo', cursive;
+    letter-spacing: 2px;
+    font-weight: 600;
+    padding: 25px; 
+    transition: all ease 1.0s;
+    border-radius: 40px;
+    border: none;
 }
 .Center_Bar button:hover{
   background-image: url('https://by3302files.storage.live.com/y4mdOURudb-0NNsFr5KoLLV9pggDVuAPGLnQHUAHHmKQ7Zxememj_iKR9L4cI2jctIlx9bciVKm7aI2uYbE0suhVZZwdgDMoqjzSXFHQcAIClBIr2SpywtYTNz4GtG8PmZQcfyzB4WCfDPjZp_tFemrWEuD-22r7uWVHPxMFNU67W9rV6x9sAlUMQSqCkYWsjJQ?width=2048&height=1152&cropmode=none');
